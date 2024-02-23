@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Masai Courses</title>
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+      nav {
+        text-align: center;
+        font-weight: bold;
+      }
+
+      nav span {
+        color: red;
+      }
+      main {
+        /* border: 1px solid; */
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        flex-wrap: wrap;
+        margin-top: 40px;
+      }
+      main > div {
+        /* border: 1px solid red; */
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 10px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      }
+      main > div > section {
+        /* border: 1px solid; */
+        width: 100%;
+        /* height: 32%; */
+      }
+      h3 + p {
+        color: #a5a1a2;
+      }
+      main > div > section:nth-child(1) {
+        background: #ced0ec;
+        border-radius: 10px 10px 0px 0px;
+      }
+      main > div > section:nth-child(2) {
+        width: 90%;
+      }
+      main > div > section:nth-child(2) * {
+        margin: 2px;
+        /* padding: 2px 0px 4px 0px; */
+      }
+      main > div > section:nth-child(3) {
+        width: 99%;
+      }
+      main > div > section:nth-child(4) {
+        padding: 0px 0px 15px 0px;
+        width: 95%;
+      }
+      main > div > section:nth-child(4) button {
+        display: block;
+        background-color: #ed0231;
+        color: white;
+        width: 95%;
+        padding: 10px;
+        margin: auto;
+        border: none;
+        cursor: pointer;
+        border-radius: 3px;
+      }
+      section li {
+        padding: 5px;
+        font-size: 13px;
+      }
+      section img {
+        display: block;
+        width: 55%;
+        margin: auto;
+      }
+      footer {
+        margin-top: 15px;
+      }
+      a {
+        color: #f24b6a;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <h1>Our Courses</h1>
+      <p>Practice-Based learning Tracks,<span> Supercharged by A.I</span></p>
+    </nav>
+    <main>
+      <div>
+        <section>
+          <img
+            src="https://masai-website-images.s3.ap-south-1.amazonaws.com/full_stack1_329d6b5595.png"
+            alt=""
+          />
+        </section>
+        <section>
+          <h3>Software Development</h3>
+          <p>Become job-ready in 30-35 weeks.</p>
+        </section>
+        <section>
+          <ul>
+            <li>Become job-ready in 30 weeks</li>
+            <li>
+              <b>Opportunities: </b> Full Stack Developer, Software Engineer &
+              much more.
+            </li>
+            <li>100% live learning with expert instructors.</li>
+            <li>Pay After Placement</li>
+          </ul>
+        </section>
+        <section>
+          <button>VIEW DETAILS</button>
+        </section>
+      </div>
+      <div>
+        <section>
+          <img
+            src="https://masai-website-images.s3.ap-south-1.amazonaws.com/data_07ee77a2da.png"
+            alt=""
+          />
+        </section>
+        <section>
+          <h3>Data Analytics</h3>
+          <p>Become job-ready in 30-35 weeks.</p>
+        </section>
+        <section>
+          <ul>
+            <li>Become job-ready in 25 weeks</li>
+            <li>
+              <b>Opportunities: </b>Data Engineer, Data Analyst, Machine
+              Learning Engineer & much more.
+            </li>
+            <li>100% live learning with expert instructors.</li>
+            <li>Pay After Placement</li>
+          </ul>
+        </section>
+        <section>
+          <button>VIEW DETAILS</button>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <center>
+        If you are currently studying 1st,2nd or pre-final year of college,
+        <a href="">Click Here</a>
+      </center>
+    </footer>
+  </body>
+</html>
