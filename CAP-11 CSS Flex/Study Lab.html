@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+      }
+      nav {
+        /* border: 1px solid; */
+        height: 50px;
+        width: 90%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 6% 0px 3%;
+        box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+      }
+      nav img {
+        /* border: 1px solid; */
+        height: 97%;
+      }
+      ul {
+        /* border: 1px solid; */
+        display: flex;
+        justify-content: space-evenly;
+        width: 40%;
+      }
+      ul li {
+        /* border: 1px solid; */
+        list-style: none;
+        cursor: pointer;
+        font-weight:600;
+      }
+      #Home {
+        color: #4a86fc;
+        font-weight: bold;
+      }
+      /* main css */
+      main {
+        /* border: 1px solid blue; */
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        margin-top: 2%;
+      }
+      main > div {
+        /* border: 1px solid; */
+        height: 100%;
+        width: 45%;
+        padding: 5px;
+      }
+      #welcome_section > div {
+        /* border: 1px solid; */
+      }
+
+      #WELCOME_text {
+        color: #4a86fc;
+        font-weight: bold;
+      }
+      .welcome_descriptions,
+      .Features_p {
+        color: #9d9d9c;
+      }
+      #welcome_section > div:nth-child(5) {
+        display: flex;
+        column-gap: 20px;
+      }
+      #watchVideo_container * {
+        /* border: 1px solid red; */
+      }
+      #watchVideo_container img {
+        width: 170px;
+      }
+      #features_section {
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+      }
+      #features_section > div {
+        /* border: 1px solid red; */
+        width: 98%;
+        height: 260px;
+        display: flex;
+        justify-content: space-around;
+      }
+      #features_section > div > div {
+        /* border: 1px solid black; */
+        width: 40%;
+        padding: 3%;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+        border-radius: 5px;
+      }
+
+      .content_images {
+        /* border: 2px solid red; */
+        width: 70px;
+        height: 70px;
+        border-radius: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .content_images img {
+        display: block;
+        width: 100%;
+        border-radius: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <img
+        src="https://freelogopng.com/images/all_img/1657952217google-logo-png.png"
+        alt=""
+      />
+
+      <ul>
+        <li id="Home">Home</li>
+        <li>About</li>
+        <li>Course</li>
+        <li>Instructor</li>
+        <li>Blog</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+    <main>
+      <div id="welcome_section">
+        <div><p id="WELCOME_text">WELCOME TO STUDYLAB</p></div>
+        <div><h1>We Are StudyLab An Online Learning Center</h1></div>
+        <div>
+          <p class="welcome_descriptions">
+            A Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+            consequatur reiciendis a sit asperiores repudiandae tenetur nihil
+            ut, facere exercitationem. Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Provident, ea.
+          </p>
+        </div>
+        <div>
+          <p class="welcome_descriptions">
+            A Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+            consequatur reiciendis a sit asperiores repudiandae tenetur nihil
+            ut, facere exercitationem.
+          </p>
+        </div>
+        <div id="watchVideo_container">
+          <div>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2yAOaUn2w7XvrIdOvDRG6IuRDABiLYsYidQ&usqp=CAU"
+              alt=""
+            />
+          </div>
+          <div>
+            <h4>Learn anything from StudyLab, <br />Watch video</h4>
+          </div>
+        </div>
+      </div>
+      <div id="features_section">
+        <div id="First_Child_of_features_section">
+          <div>
+            <p class="content_images">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNxKGRW7H-2sw_dRp4sOUqz6hV8v0IW8NwGD0zNtyxTY3gz162PesMSa3rxPBnpOt6ozM&usqp=CAU"
+                alt=""
+              />
+            </p>
+            <h3>Top Quality Content</h3>
+            <p class="Features_p">
+              A small river named Duden by their place and supplier
+            </p>
+          </div>
+          <div>
+            <p class="content_images">
+              <img
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxviqKvan1oJY9S-MmHmQq97KTeI0FyANs9KxAGxuZ3ighdg0A3SAoY28wUeVSp9-zMorinxDSALvrFvKPmqObE1N_iDVmxCyFYW4Z8tTKnu2-XgfgI8htXUaAGTYAHhsz-My8HFMYda8XKEo59Xo6cpCuS0-tF5SCI93aOW4zTmu-pIMmqFc8M-9V/s1838/Producing-High-quality-content-quality-duniya.jpg"
+                alt=""
+              />
+            </p>
+            <h3>Top Quality Content</h3>
+            <p class="Features_p">
+              A small river named Duden by their place and supplier
+            </p>
+          </div>
+        </div>
+        <div id="Second_Child_of_features_section">
+          <div>
+            <p class="content_images">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNxKGRW7H-2sw_dRp4sOUqz6hV8v0IW8NwGD0zNtyxTY3gz162PesMSa3rxPBnpOt6ozM&usqp=CAU"
+                alt=""
+              />
+            </p>
+            <h3>Top Quality Content</h3>
+            <p class="Features_p">
+              A small river named Duden by their place and supplier
+            </p>
+          </div>
+          <div>
+            <p class="content_images">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNxKGRW7H-2sw_dRp4sOUqz6hV8v0IW8NwGD0zNtyxTY3gz162PesMSa3rxPBnpOt6ozM&usqp=CAU"
+                alt=""
+              />
+            </p>
+            <h3>Top Quality Content</h3>
+            <p class="Features_p">
+              A small river named Duden by their place and supplier
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
