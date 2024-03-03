@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        text-align: center;
+        color: #008080;
+        font-size: 35px;
+      }
+      #Container {
+        width: 300px;
+        height: 350px;
+        margin: auto;
+        padding: 45px 25px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        margin-top: 50px;
+      }
+      h3 {
+        margin: auto;
+        width: 95%;
+        height: 10%;
+      }
+      #Display_Result {
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        border-radius: 10px;
+        padding: 10px 0px;
+      }
+      #Buttons_Div {
+        display: grid;
+        width: 90%;
+        height: 75%;
+        margin: auto;
+        grid-template-columns: repeat(4, 1fr);
+        margin-top: 5%;
+        padding: 0px 3px;
+        gap: 10px;
+      }
+      #Buttons_Div > div {
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bolder;
+        cursor: pointer;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      }
+      #Buttons_Div > div:hover {
+        background-color: rgb(245, 142, 142);
+      }
+      .AddBlack_Color {
+        background-color: black;
+        color: white;
+      }
+      #Buttons_Div .AddBlack_Color:hover {
+        background-color: rgb(45, 44, 44);
+      }
+      #Clear_button {
+        background-color: red;
+        color: white;
+      }
+      #Buttons_Div #Clear_button:hover {
+        background-color: rgb(251, 126, 126);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Masai Calculator</h1>
+    <div id="Container">
+      <h3 id="Display_Result"></h3>
+      <div id="Buttons_Div">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div class="AddBlack_Color">+</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div class="AddBlack_Color">-</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div class="AddBlack_Color">X</div>
+        <div id="Clear_button">C</div>
+        <div>0</div>
+        <div class="AddBlack_Color">=</div>
+        <div class="AddBlack_Color">/</div>
+      </div>
+    </div>
+  </body>
+</html>

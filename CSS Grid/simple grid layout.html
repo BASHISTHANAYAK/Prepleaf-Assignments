@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>simple grid layout</title>
+    <style>
+      #Container {
+        width: 700px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 130px);
+        gap: 7px;
+        grid-template-areas:
+          "two three four"
+          "five six one"
+          "seven eight nine";
+      }
+      #Container > div {
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+      }
+      #Container > div:nth-child(1) {
+        background-color: #00bffe;
+        grid-area: one;
+      }
+      #Container > div:nth-child(2) {
+        background-color: #ff4500;
+        grid-area: two;
+      }
+      #Container > div:nth-child(3) {
+        background-color: #4169e2;
+        grid-area: three;
+      }
+      #Container > div:nth-child(4) {
+        background-color: #ffd603;
+        grid-area: four;
+      }
+      #Container > div:nth-child(5) {
+        background-color: #8a2be1;
+        grid-area: five;
+      }
+      #Container > div:nth-child(6) {
+        background-color: #32cd33;
+        grid-area: six;
+      }
+      #Container > div:nth-child(7) {
+        background-color: #ff7f50;
+        grid-area: seven;
+      }
+      #Container > div:nth-child(8) {
+        background-color: #20b1aa;
+        grid-area: eight;
+      }
+      #Container > div:nth-child(9) {
+        background-color: #800000;
+        grid-area: nine;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="Container">
+      <div>1.</div>
+      <div>2.</div>
+      <div>3.</div>
+      <div>4.</div>
+      <div>5.</div>
+      <div>6.</div>
+      <div>7.</div>
+      <div>8.</div>
+      <div>9.</div>
+    </div>
+  </body>
+</html>
