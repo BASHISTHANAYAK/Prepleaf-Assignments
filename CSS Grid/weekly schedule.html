@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>weekly schedule</title>
+    <title>Document</title>
     <style>
       #week_img {
         width: 70%;
@@ -18,61 +18,54 @@
         width: 100%;
       }
       #Container {
-        width: 90%;
+        width: 80%;
         margin: auto;
-        margin-top: 20px;
         display: grid;
         grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(11, 1fr);
-        gap: 3%;
-        grid-template-areas:
-          ". two three four five six"
-          "one eight nine ten eleven twelve"
-          "seven fourteen fifteen sixteen seventeen eighteen"
-          "thirteen twenty twentyone twentytwo twentythree twentyfour"
-          "nineteen twentysix twentyseven twentyeight twentynine thirty"
-          "twentyfive thirtytwo thirtythree thirtyfour thirtyfive thirtysix"
-          "thirtyone thirtyeight thirtynine forty fortyone fortytwo"
-          "thirtyseven fortyfour fortyfive fortysix fortyseven fortyeight"
-          "fortythree fifty fiftyone fiftytwo fiftythree fiftyfour "
-          "fortynine fiftysix fiftyseven fiftyeight fiftynine  sixty"
-          "fiftyfive fiftyfive fiftyfive fiftyfive fiftyfive fiftyfive";
+        gap: 10px;
         overflow: auto;
+        margin-top: 10px;
+      }
+
+      #first_box {
+        visibility: hidden;
       }
       #Container > div {
         border-radius: 20px;
-        padding: 1.5% 0;
+        padding: 6% 0%;
         display: flex;
         align-items: center;
         justify-content: center;
         font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
           sans-serif;
-      }
-      #Container > div:nth-child(6n + 1) {
-        background-color: #bceef2;
-      }
-      #Container > div:nth-child(6n + 2),
-      #Container > div:nth-child(6n + 4),
-      #Container > div:nth-child(6n + 6) {
-        background-color: #ffd6ef;
-      }
-      #Container > div:nth-child(6n + 3),
-      #Container > div:nth-child(6n + 5) {
-        background-color: #faecaa;
-      }
-      #Note {
         text-align: center;
       }
-      .days,
-      .Times,
-      #Notes {
-        font-weight: bolder;
+      .Container > div:nth-child(odd) {
+        background-color: #faecaa;
+      }
+      #Container > div:nth-child(even) {
+        background-color: #ffd6ef;
       }
 
-      #Container #Notes {
+      .days,
+      .Times,
+      #Container > div #note {
+        font-weight: bolder;
+      }
+      #Container > .Times {
+        background-color: #bceef2;
+      }
+      #Container > #note {
+        grid-column: 1/-1;
+        background-color: #bceef2;
+        padding: 1px 0;
         display: flex;
         justify-content: flex-start;
-        padding-left: 1.9%;
+      }
+      #note h3 {
+        margin-left: 10px;
+        margin: 0px 0px 0px 15px;
+        padding: .6% 0px;
       }
     </style>
   </head>
@@ -80,67 +73,68 @@
     <div id="week_img">
       <img src="./img/goldenStars.png" alt="" srcset="" />
     </div>
-    <div id="Container">
-      <div style="grid-area: one" class="Times">08:00</div>
-      <div style="grid-area: two" class="days">Monday</div>
-      <div style="grid-area: three" class="days">Tuesday</div>
-      <div style="grid-area: four" class="days">Wednesday</div>
-      <div style="grid-area: five" class="days">Thursday</div>
-      <div style="grid-area: six" class="days">Friday</div>
-      <div style="grid-area: seven" class="Times">09:00</div>
-      <div style="grid-area: eight">Math</div>
-      <div style="grid-area: nine">Math</div>
-      <div style="grid-area: ten">Math</div>
-      <div style="grid-area: eleven">Math</div>
-      <div style="grid-area: twelve">Math</div>
-      <div style="grid-area: thirteen" class="Times">10:00</div>
-      <div style="grid-area: fourteen">Science</div>
-      <div style="grid-area: fifteen">Science</div>
-      <div style="grid-area: sixteen">Science</div>
-      <div style="grid-area: seventeen">Science</div>
-      <div style="grid-area: eighteen">Science</div>
-      <div style="grid-area: nineteen" class="Times">11:00</div>
-      <div style="grid-area: twenty">History</div>
-      <div style="grid-area: twentyone">History</div>
-      <div style="grid-area: twentytwo">History</div>
-      <div style="grid-area: twentythree">History</div>
-      <div style="grid-area: twentyfour">History</div>
-      <div style="grid-area: twentyfive" class="Times">12:00</div>
-      <div style="grid-area: twentysix">English Literature</div>
-      <div style="grid-area: twentyseven">English Literature</div>
-      <div style="grid-area: twentyeight">English Literature</div>
-      <div style="grid-area: twentynine">English Literature</div>
-      <div style="grid-area: thirty">English Literature</div>
-      <div style="grid-area: thirtyone" class="Times">13:00</div>
-      <div style="grid-area: thirtytwo">Computer Science</div>
-      <div style="grid-area: thirtythree">Computer Science</div>
-      <div style="grid-area: thirtyfour">Computer Science</div>
-      <div style="grid-area: thirtyfive">Computer Science</div>
-      <div style="grid-area: thirtysix">Computer Science</div>
-      <div style="grid-area: thirtyseven" class="Times">14:00</div>
-      <div style="grid-area: thirtyeight">Geography</div>
-      <div style="grid-area: thirtynine">Geography</div>
-      <div style="grid-area: forty">Geography</div>
-      <div style="grid-area: fortyone">Geography</div>
-      <div style="grid-area: fortytwo">Geography</div>
-      <div style="grid-area: fortythree" class="Times">15:00</div>
-      <div style="grid-area: fortyfour">Geography</div>
-      <div style="grid-area: fortyfive">Geography</div>
-      <div style="grid-area: fortysix">Geography</div>
-      <div style="grid-area: fortyseven">Geography</div>
-      <div style="grid-area: fortyeight">Geography</div>
-      <div style="grid-area: fortynine" class="Times">16:00</div>
-      <div style="grid-area: fifty">Geography</div>
-      <div style="grid-area: fiftyone">Geography</div>
-      <div style="grid-area: fiftytwo">Geography</div>
-      <div style="grid-area: fiftythree">Geography</div>
-      <div style="grid-area: fiftyfour">Geography</div>
-      <div style="grid-area: fiftyfive" id="Notes">Note:</div>
-      <div style="grid-area: fiftysix">Pt</div>
-      <div style="grid-area: fiftyseven">Pt</div>
-      <div style="grid-area: fiftyeight">Pt</div>
-      <div style="grid-area: fiftynine">Pt</div>
-      <div style="grid-area: sixty">Pt</div>
+    <div id="Container" class="Container">
+      <div id="first_box"></div>
+      <div class="days">Monday</div>
+      <div class="days">Tuesday</div>
+      <div class="days">Wednesday</div>
+      <div class="days">Thursday</div>
+      <div class="days">Friday</div>
+      <div class="Times">08:00</div>
+      <div>Math</div>
+      <div>Science</div>
+      <div>History</div>
+      <div>English Literature</div>
+      <div>Geography</div>
+      <div class="Times">09:00</div>
+      <div>Math</div>
+      <div>Science</div>
+      <div>History</div>
+      <div>English Literature</div>
+      <div>Geography</div>
+      <div class="Times">10:00</div>
+      <div>Math</div>
+      <div>Science</div>
+      <div>History</div>
+      <div>English Literature</div>
+      <div>Geography</div>
+      <div class="Times">11:00</div>
+      <div>Math</div>
+      <div>Science</div>
+      <div>History</div>
+      <div>English Literature</div>
+      <div>Geography</div>
+      <div class="Times">12:00</div>
+      <div>Math</div>
+      <div>Science</div>
+      <div>History</div>
+      <div>English Literature</div>
+      <div>Geography</div>
+      <div class="Times">13:00</div>
+      <div>Math</div>
+      <div>Science</div>
+      <div>History</div>
+      <div>English Literature</div>
+      <div>Geography</div>
+      <div class="Times">14:00</div>
+      <div>Math</div>
+      <div>Science</div>
+      <div>History</div>
+      <div>English Literature</div>
+      <div>Geography</div>
+      <div class="Times">15:00</div>
+      <div>Math</div>
+      <div>Science</div>
+      <div>History</div>
+      <div>English Literature</div>
+      <div>Geography</div>
+      <div class="Times">16:00</div>
+      <div>Math</div>
+      <div>Science</div>
+      <div>History</div>
+      <div>English Literature</div>
+      <div>Geography</div>
+      <div id="note"><h3>Note:</h3></div>
     </div>
   </body>
 </html>
