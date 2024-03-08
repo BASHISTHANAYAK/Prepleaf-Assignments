@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+nav {
+  /* border: 1px solid; */
+  background-color: #333333;
+  padding: 7px 0px;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+li a {
+  text-decoration: none;
+  color: white;
+}
+li:hover {
+  color: aliceblue;
+  transform: scale(0.9);
+}
+main {
+  background-color: #f4f4f4;
+  padding: 5px 0px 15px 0px;
+}
+
+main section {
+  /* border: 1px solid red; */
+  width: 96%;
+  margin: 15px auto auto auto;
+  height: 130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 10px 5px;
+  border-radius: 10px;
+}
+
+article {
+  text-align: center;
+}
+img {
+  display: block;
+  /* transform: scale(0.5); */
+  height: 80%;
+  margin-left: 50px;
+}
+#Home h3 {
+  color: #4caf50;
+}
+#Education h3 {
+  color: #e91e63;
+}
+#Projects h3 {
+  color: #ffc107;
+}
+#Skills h3 {
+  color: #9c27b0;
+}
+#ContactMe h3 {
+  color: #2196f3;
+}
+h3 {
+  font-size: 20px;
+}
+#Select_DIV,
+#MyPortfolio {
+  display: none;
+}
+
+@media screen and (max-width: 750px) {
+  nav ul {
+    display: none;
+  }
+
+  #MyPortfolio {
+    color: #00bcd4;
+    text-align: center;
+  }
+  #Select_DIV,
+  #MyPortfolio {
+    display: block;
+  }
+  #Select_DIV {
+    /* border: 1px solid red; */
+    width: 100%;
+    padding: 10px 0px;
+    background-color: #444444;
+  }
+  select {
+    display: block;
+    width: 97%;
+    padding: 13px 0px;
+    margin: auto;
+    border-radius: 5px;
+    background-color: #555555;
+    color: white;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  main section {
+    flex-direction: column;
+    height: auto;
+    padding: 50px 0px;
+  }
+  img {
+    margin: 0;
+    height: 100px;
+    padding-bottom: 20px;
+  }
+}

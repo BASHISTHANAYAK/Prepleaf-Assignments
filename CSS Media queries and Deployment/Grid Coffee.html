@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #Container {
+        display: grid;
+        grid-template-columns: repeat(3, 325px);
+        grid-auto-rows: 140px;
+        gap: 20px;
+        justify-content: center;
+        font-family: sans-serif;
+        padding: 20px;
+      }
+      #Container > div {
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 10px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 10px 25px;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+      }
+      footer {
+        color: #7d7d7d;
+      }
+      .Price {
+        color: #b68835;
+      }
+      header,footer,h3{
+        padding: 0;
+        margin: 0;
+      }
+      @media screen and (max-width: 990px) {
+        #Container {
+          grid-template-columns: repeat(2, 1fr);
+          grid-auto-rows: 180px;
+        }
+      }
+      @media screen and (max-width: 580px) {
+        #Container {
+          grid-template-columns: repeat(1, 1fr);
+          grid-auto-rows: 200px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="Container">
+      <div>
+        <header>
+          <h3>Cappucccino</h3>
+          <h3 class="Price">$49</h3>
+        </header>
+        <footer>
+          Usage of the Interent is becoming more common due to rapid advance
+        </footer>
+      </div>
+      <div>
+        <header>
+          <h3>Cappucccino</h3>
+          <h3 class="Price">$49</h3>
+        </header>
+        <footer>
+          Usage of the Interent is becoming more common due to rapid advance
+        </footer>
+      </div>
+      <div>
+        <header>
+          <h3>Cappucccino</h3>
+          <h3 class="Price">$49</h3>
+        </header>
+        <footer>
+          Usage of the Interent is becoming more common due to rapid advance
+        </footer>
+      </div>
+      <div>
+        <header>
+          <h3>Cappucccino</h3>
+          <h3 class="Price">$49</h3>
+        </header>
+        <footer>
+          Usage of the Interent is becoming more common due to rapid advance
+        </footer>
+      </div>
+      <div>
+        <header>
+          <h3>Cappucccino</h3>
+          <h3 class="Price">$49</h3>
+        </header>
+        <footer>
+          Usage of the Interent is becoming more common due to rapid advance
+        </footer>
+      </div>
+      <div>
+        <header>
+          <h3>Cappucccino</h3>
+          <h3 class="Price">$49</h3>
+        </header>
+        <footer>
+          Usage of the Interent is becoming more common due to rapid advance
+        </footer>
+      </div>
+      <div>
+        <header>
+          <h3>Cappucccino</h3>
+          <h3 class="Price">$49</h3>
+        </header>
+        <footer>
+          Usage of the Interent is becoming more common due to rapid advance
+        </footer>
+      </div>
+      <div>
+        <header>
+          <h3>Cappucccino</h3>
+          <h3 class="Price">$49</h3>
+        </header>
+        <footer>
+          Usage of the Interent is becoming more common due to rapid advance
+        </footer>
+      </div>
+      <div>
+        <header>
+          <h3>Cappucccino</h3>
+          <h3 class="Price">$49</h3>
+        </header>
+        <footer>
+          Usage of the Interent is becoming more common due to rapid advance
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
