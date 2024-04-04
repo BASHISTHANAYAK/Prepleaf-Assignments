@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        margin: 0;
+      }
+      nav {
+        height: 50px;
+        padding: 0px 3px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fef8f5;
+        font-family: inter;
+        font-weight: 100;
+        font-size: 0.9rem;
+      }
+
+      nav > div:last-child {
+        margin-left: 15%;
+      }
+
+      #Home {
+        color: #f07c49;
+      }
+      #Pages--Link > ul,
+      #Help--details > ul {
+        display: flex;
+        list-style: none;
+        gap: 25px;
+      }
+      #Help--details > ul li {
+        padding: 5px;
+      }
+      a {
+        text-decoration: none;
+      }
+      #Log--in {
+        border: 1px solid;
+        border-radius: 10px;
+      }
+      /* Adventure--section css */
+      #Adventure--section {
+        border: 1px solid transparent;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        background-color: #fef8f5;
+        height: 540px;
+        background-image: url("https://s3-alpha-sig.figma.com/img/e4e9/4bcd/6013879f33e24c0450bcde15d215f8ae?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QuDutdYXQRMfxTOjHO1J1pyZ8MGiPtRFFL2TkCpO2zq-62K50LHSW02KwyYtdcgkocbh6jOFaavtM4BkMHX183vNCyP0fwfIhcAV-mp2JI4s1aVGPmIUIPYRrzRTO7noBqze9dP1tRv5o2N0gUAzV81eUCywe5arcKPiwCVT33A98KCPF6j6QI1H24i-cfXwvTwP5cB4pn6HHDaUNq4JQvgR8eKIaiuiKLmU9nSkWZt-UguuD1q6SPXQTOk3P2adigj9X6grYSrG-m3J2U1rr5o~J5WV4FOj-SYPvuKRNul8D2ogvlVIAGxlEGBv1wokQvsKeNnkSQi-h0qtpl1Tiw__");
+        background-size: cover;
+        background-position: center;
+      }
+      #search--div {
+        border-radius: 20px;
+        width: 50%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: white;
+        margin-top: 40px;
+        padding: 0px 0.6%;
+      }
+      #search--div > section {
+        display: flex;
+        align-items: center;
+        gap: 2px;
+        height: 55px;
+      }
+      .adventure__container--div {
+        margin-top: 90px;
+        font-family: Inter;
+        font-size: 20px;
+        background: linear-gradient(90.84deg, #ee8c61 27.01%, #4c43c4 87.3%);
+        background-clip: text;
+        color: transparent;
+      }
+      .adventure__container--div > h1 {
+        margin: 0;
+      }
+      .circle {
+        padding: 20px;
+        border-radius: 50%;
+        background-color: #fef7f4;
+      }
+      .brown--circle {
+        background-color: #eb662b;
+        padding: 22px;
+      }
+      .text {
+        text-align: left;
+        font-size: 0.8rem;
+      }
+      .text > span {
+        display: block;
+      }
+      .text > span:first-child {
+        font-family: inter;
+      }
+      .text > span:last-child {
+        color: #717171;
+      }
+      #Popular--section {
+        display: grid;
+        grid-template-columns: repeat(7, 106px);
+        grid-auto-rows: 150px;
+        gap: 13px;
+        justify-content: center;
+      }
+
+      #Popular--section > div > img {
+        width: 100%;
+        height: 100%;
+      }
+      #Popular--section > div:nth-child(1) {
+        grid-row: span 2;
+        grid-column: span 2;
+      }
+      #Popular--section > div:nth-child(2),
+      #Popular--section > div:nth-child(4) {
+        grid-column: span 2;
+      }
+      #Popular--section > div:nth-child(3) {
+        grid-column: span 3;
+      }
+      #Popular--section > div:nth-child(6) {
+        grid-column: span 2;
+      }
+      #Popular--things,
+      #Why--choose {
+        margin-left: 18%;
+        margin-top: 40px;
+        font-weight: 200;
+        font-family: inter;
+      }
+      footer {
+        width: 65%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+      }
+      footer > div {
+        width: 23%;
+      }
+      footer > div > img {
+        width: 40px;
+      }
+      footer > div > h5 {
+        margin: 20px 0 0 0;
+        font-weight: 500;
+        font-family: inter;
+      }
+      footer > div > p {
+        margin-top: 3px 0 0 0;
+        font-size: 0.8rem;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div id="Icon">
+        <img src="https://i.postimg.cc/8CkTFdbx/logo-1-svg-fill-1.png" alt="" />
+      </div>
+      <div id="Pages--Link">
+        <ul>
+          <li><a href="" id="Home">Home</a></li>
+          <li><a href="">Tour</a></li>
+          <li><a href="">Destination</a></li>
+          <li><a href="">Activities</a></li>
+          <li><a href="">Pages</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </div>
+      <div id="Help--details">
+        <ul>
+          <li>USD</li>
+          <li>Help</li>
+          <li>Sign up</li>
+          <li id="Log--in">Log in</li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <section id="Adventure--section">
+        <div class="adventure__container--div">
+          <h1>LIfe Is Adventure Make</h1>
+          <h1>The Best Of It</h1>
+        </div>
+        <div id="search--div">
+          <section>
+            <p class="circle"></p>
+            <p class="text">
+              <span>Where</span>
+              <span>Search destination</span>
+            </p>
+          </section>
+          <section>
+            <p class="circle"></p>
+            <p class="text">
+              <span>Where</span>
+              <span>Search destination</span>
+            </p>
+          </section>
+          <section>
+            <p class="circle"></p>
+            <p class="text">
+              <span>Where</span>
+              <span>Search destination</span>
+            </p>
+          </section>
+          <section>
+            <p class="circle brown--circle"></p>
+          </section>
+        </div>
+      </section>
+      <h2 id="Popular--things">Popular things to do</h2>
+      <section id="Popular--section">
+        <div>
+          <img
+            src="https://s3-alpha-sig.figma.com/img/76b3/fa13/6a9ace2557d845af1182fdf084d7b7c5?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=PHwBQxG-bSFqL4MnaQNiyOU-XZmN25m3gSfaQnxQVCN1lFiLcvFCk1jd1YNbpdCKnV0azmWlMpcmUkRlSw~hz7rln5XQhhy8ctJDgy8~~jin3l-g2nM90b1StoSEwTdDQrNliaVN4n0Ot69OrN2siTy-aVdSZ694eSUu8M1c3dtlh5S-JLRziCXh-zkA-V9k-CwxnilxauZLTQpyUGMyhS30iGUcq7wiSteaJaxk1LAGA0tMKGpknKos4cGq~X6waWwd9i3yEDBDHL7wp3Iql355mBUzEIThfZJvRgvIzAv5jV5zRXP6GISdICEjJgTgPJs4gYDNxgxZusxkcrY1QA__"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            src="https://s3-alpha-sig.figma.com/img/0fd0/4e77/fa2f519cee67f82695b89b5df33046cb?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=JjuwuGzydNonUPJuqP49gERzFf8HBwwJt74O5clcPH5HXpR4cLAVecnCF48zH1oRGutDu7zZdtptdkhB61CZi93~jA1gP~to37sMw19s6D0Egs4aA8DhlQGZFEbRTHoAs-dXhyr5xY3DzxwyM0xBQX6B4rNKkJ8v6htwuMn9OTWt2eJ0LVeMM1JhaqfccBoCzQb74m0KiLeWRG1PiT-8hmPeKn7iGJhvwctAbGy4q4SOFypQ~2nz4M3CY91yw1W1cAUKSW0TupEJWHzcmXrQ~0ZgAXxc8j~POl32f3JkQp1FEKmv2ZGLD0705WKMa~OYe1d1DIgmNDQhwfW4rGXW5w__"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            src="https://s3-alpha-sig.figma.com/img/f8e7/cdb2/57294e5314f6d71ac39bd183294e93e6?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QoPKEwFAkAR4u5GKXP2hzFu0m5fnEI4aMoXswt5b8UxGzG5BzSKW-mAsoFAksFTKDAL1U7f9Oy1yTQIcOze~59VYoVPe9yzgiJlVJnOFw5KL8m3EDsnlzf3mtAUxoaiP3IuGbCUkaO1jMK-agGWgY03PQ7F3Z2aMl2ObXE85ePXxfz-xz~kCryI4~XbuZ9itrbOymIfH-dcpaELFh5uHVkynxX-ixJW0s17D4KbSldJwrm~Xb5XttkYZYvX0MdzBVJ9FGR7zrnqJrvs27v-uavBaKF~R5iMYUDyAFg0aon4nIaJDQXqIZ1M~mcBBsYbtAKMxzTNkOkVdZsEVmXfXGQ__"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            src="https://s3-alpha-sig.figma.com/img/973e/297c/b7b794108f48559bdc9a2b21e1cd2489?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=VTEBaopOgmg8IbKnktMBlXQ0BUK~C78n6VoKWK-3Im0WMVHf05ItnnS4n89feWy1qpKUPCXjWr3ixObyi2wsb0S1Z4MgNYOYXTwBhKxWtPvXtR4W1JGadSaEEbhjTbgWEQYSqntsyuiSEaqDPYWkLb0uNbRyAWBOfdKDt7ibOnPJGMr5uYrExzxOioBNpbUy7Fgs8JnJgQQR83O2Wlh4cUOjkMFC1v0skgkSLyuk27dV7jqQk33Vtbcq6qcnJUAkTTVGbM7wJ0XOrIXEwPzVoPuyZhgEGwE-JcMyoJchhE2jV~pagwtiNvE9xcTHgJYJK9z13pC5c10cuz9l6HYWnw__"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            src="https://s3-alpha-sig.figma.com/img/8691/6e41/6c5d65b9ebccd84907a3e194ec1955e2?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=lthn5~o5vpyeAUENZJRjav2mdl5Udb1Cg3jdKYU2S9Wu2FnFLR16iwnspFVAXpaX8kUdzKP4ELe1pBZYvMNwZ1CiPV1-njmST3XTOShiwAqstmX81dbDXjMLsfNiqQD~GBcm0koEBEdH4C66fM-PQGhQm87FXuz-HZw9plveyUcdP9IheLRbZA1VdP1lcGgKCAp4IrE2LCJUBqLOfXU9EL8MemSI-i4WP166E4eSRE0aIQDs92SEOlekXbmm8IGjl~u2Mt590fZ167qs2P58UVVkU5ZMKWSlIjFwxvONGQAT3V4tMzhMnWuWu2HtOEm8KMMfg0HB0UmCc3b3rhS~Sw__"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            src="https://s3-alpha-sig.figma.com/img/a65d/97e9/a4068c7d2d218b0eb034f1a9604c9cdc?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=eB3YmolCtmZBQsE8TFoaHfUZ64DWWREGxOLmMb6pK0Uus4zlX8iMUzNoB1i7BtYOWE19zzyCsy0qmiDD14oQFqYgye~ZE9Ig4hqJANnnr7hZFLbVOaxRRUAMW3Qw08ZEBfT81JSYUvbe1b8k90ILh~I4~wvC67xjXMIud81z1i7Fg3S2FINnoM2GZKnSWGworvgFyqY5FO7~TyDY5T8ho00n0G5JBq1BCN7LNJdYNq-tw5vxdfdD7z--Xu7D-AL1cbvXpb~uyR~QEnSDP358wga45Zs2i6JNJ~M6oXr5VZQe2gWUuf4kxcQFq2CKU7K3NpNvGCOUYdipb-ml72E3jw__ "
+            alt=""
+          />
+        </div>
+      </section>
+    </main>
+    <h2 id="Why--choose">Why choose Tourz</h2>
+    <footer>
+      <div>
+        <img src="https://i.postimg.cc/wjkYRzrr/ticket-svg.png" alt="" />
+        <h5>Ultimate flexibility</h5>
+        <p>
+          You're in control, with free cancellation and payment options to
+          satisfy any plan or budget.
+        </p>
+      </div>
+      <div>
+        <img
+          src="https://i.postimg.cc/kXyNNqmz/hot-air-balloon-svg.png"
+          alt=""
+        />
+        <h5>Ultimate flexibility</h5>
+        <p>
+          You're in control, with free cancellation and payment options to
+          satisfy any plan or budget.
+        </p>
+      </div>
+      <div>
+        <img src="https://i.postimg.cc/cCB3cMVw/diamond-svg-fill.png" alt="" />
+        <h5>Ultimate flexibility</h5>
+        <p>
+          You're in control, with free cancellation and payment options to
+          satisfy any plan or budget.
+        </p>
+      </div>
+      <div>
+        <img src="https://i.postimg.cc/T1twwkz7/medal-svg-fill.png" alt="" />
+        <h5>Ultimate flexibility</h5>
+        <p>
+          You're in control, with free cancellation and payment options to
+          satisfy any plan or budget.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
