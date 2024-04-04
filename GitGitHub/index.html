@@ -4,7 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Masai Investors</title>
-    <style></style>
+    <style>
+        #Investors--container {
+        border: 1px solid red;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+        grid-template-rows: repeat(auto-fit, auto);
+        gap: 1.5%;
+        padding: 10px;
+      }
+      #Investors--container > div {
+        border: 1px solid blue;
+  
+      }
+    </style>
   </head>
   <body>
     <div id="Investors--container">
