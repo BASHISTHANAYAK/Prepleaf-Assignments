@@ -5,8 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Masai Investors</title>
     <style>
-        #Investors--container {
-        border: 1px solid red;
+        body {
+        font-family: sans-serif;
+      }
+      
+ 
+    
+      #Investors--container {
+        /* border: 1px solid red; */
         height: auto;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
@@ -15,65 +21,84 @@
         padding: 10px;
       }
       #Investors--container > div {
-        border: 1px solid blue;
-  
+        /* border: 1px solid blue; */
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+        margin: 0 auto;
+        border-top: 6px solid #e5e7eb;
+      }
+      #Investors--container > div p,
+      h4 {
+        margin: 1%;
+      }
+
+      #Investors--container > div > img:first-child {
+        width: 100%;
+        display: block;
+      }
+
+      #Investors--container > div > img:last-child {
+        width: 35%;
+        display: block;
       }
     </style>
   </head>
   <body>
     <div id="Investors--container">
-      <div id="Investors--container">
-        <div>
-          <img
-            src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Vijay_Shekhar_Sharma_Paytm_96f52579b8.jpg"
-            alt=""
-          />
-          <h4 class="InvestorName">Vijay Shekhar Sharma</h4>
-          <p>Founder & CEO</p>
-          <img
-            src="https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_rect_06df45a24f.svg"
-            alt="Investor company logo"
-          />
-        </div>
-  
-        <div>
-          <img
-            src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Rectangle_427_637d69bb57.png"
-            alt=""
-          />
-          <h4 class="InvestorName">Kunal Shah</h4>
-          <p>Founder</p>
-          <img
-            src="https://masai-website-images.s3.ap-south-1.amazonaws.com/cred_0a47d7b4f8.png"
-            alt="Investor company logo"
-          />
-        </div>
-  
-        <div>
-          <img
-            src="https://masai-website-images.s3.ap-south-1.amazonaws.com/amrish_rau_pine_labs_144e5e587c.jpg"
-            alt=""
-          />
-          <h4 class="InvestorName">Amrish Rau</h4>
-          <p>CEO</p>
-          <img
-            src="https://masai-website-images.s3.ap-south-1.amazonaws.com/pine_labs_0aa2407434.png"
-            alt="Investor company logo"
-          />
-        </div>
-  
-        <div>
-          <img
-            src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Sampad_swain_Instamojo_f12bf6341e.jpg"
-            alt=""
-          />
-          <h4 class="InvestorName">Sampad Swain</h4>
-          <p>Co-Founder & CEO</p>
-          <img
-            src="https://masai-website-images.s3.ap-south-1.amazonaws.com/instamojo_8763e704f7.png"
-            alt="Investor company logo"
-          />
-        </div>
-    </div>
+      <div>
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Vijay_Shekhar_Sharma_Paytm_96f52579b8.jpg"
+          alt=""
+        />
+        <h4 class="InvestorName">Vijay Shekhar Sharma</h4>
+        <p>Founder & CEO</p>
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_rect_06df45a24f.svg"
+          alt="Investor company logo"
+        />
+      </div>
+
+      <div>
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Rectangle_427_637d69bb57.png"
+          alt=""
+        />
+        <h4 class="InvestorName">Kunal Shah</h4>
+        <p>Founder</p>
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/cred_0a47d7b4f8.png"
+          alt="Investor company logo"
+        />
+      </div>
+
+      <div>
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/amrish_rau_pine_labs_144e5e587c.jpg"
+          alt=""
+        />
+        <h4 class="InvestorName">Amrish Rau</h4>
+        <p>CEO</p>
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/pine_labs_0aa2407434.png"
+          alt="Investor company logo"
+        />
+      </div>
+
+      <div>
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Sampad_swain_Instamojo_f12bf6341e.jpg"
+          alt=""
+        />
+        <h4 class="InvestorName">Sampad Swain</h4>
+        <p>Co-Founder & CEO</p>
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/instamojo_8763e704f7.png"
+          alt="Investor company logo"
+        />
+      </div>
   </body>
 </html>
